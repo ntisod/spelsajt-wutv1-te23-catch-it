@@ -12,7 +12,6 @@
       menu.style.display = menu.style.display === "flex" ? "none" : "flex";
     }
   
-   
     window.addEventListener("click", function (e) {
       const menu = document.getElementById("dropdownMenu");
       const icon = document.querySelector(".menu-icon");
@@ -20,7 +19,7 @@
         menu.style.display = "none";
       }
     });
-  </script>
+</script>
 <body>
     <header>
         <div class="menu-container">
@@ -31,27 +30,41 @@
           </div>
       
           <div class="dropdown-menu" id="dropdownMenu">
-           
             <a href="Index.html">Hem</a> 
             <a href="OmSpelet.html">Om spelet!</a> 
             <a href="HurSpelarMan.html">Hur spelar man?</a> 
             <a href="HurGjordesSpelet.html">Hur gjordes spelet?</a>
             <a href="Kontakt.html">Credit</a>
-         
-        
+          </div>
         </div>
-        </div>
-      </header>
+    </header>
 
-      <div class="logo">
-        Catch It!
-      </div>
-      
-    <h1> Catch it!</h1>
-    <h2> 1 </h2>
-    <p> 2 </p>
+    <div class="logo">
+      Catch It!
+    </div>
+    
+    <h1>Hur spelar man?</h1>
+    
+    <p>Man spelar spelet genom att använda vänster- och högerpiltangenterna för att flytta hinken fram och tillbaka och fånga ballongerna som faller från himlen.</p>
 
+    <h2>Styrning</h2>
+<div style="text-align: center;">
+  <table border="1" style="border-collapse: collapse; margin: auto;">
+    <tr>
+      <th>Tangent</th>
+      <th>Funktion</th>
+    </tr>
+    <tr>
+      <td>⬅️ Vänsterpil</td>
+      <td>Flytta hinken åt vänster</td>
+    </tr>
+    <tr>
+      <td>➡️ Högerpil</td>
+      <td>Flytta hinken åt höger</td>
+    </tr>
+  </table>
+</div>
+
+    </table>
 </body>
 </html>
-
-
