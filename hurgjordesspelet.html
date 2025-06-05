@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="SpelSite.css">
+</head>
+<script>
+    function toggleMenu() {
+      const menu = document.getElementById("dropdownMenu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  
+   
+    window.addEventListener("click", function (e) {
+      const menu = document.getElementById("dropdownMenu");
+      const icon = document.querySelector(".menu-icon");
+      if (!menu.contains(e.target) && !icon.contains(e.target)) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
+<body>
+    <header>
+        <div class="menu-container">
+          <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+      
+          <div class="dropdown-menu" id="dropdownMenu">
+           
+            <a href="Index.html">Hem</a> 
+            <a href="OmSpelet.html">Om spelet!</a> 
+            <a href="HurSpelarMan.html">Hur spelar man?</a> 
+            <a href="HurGjordesSpelet.html">Hur gjordes spelet?</a>
+            <a href="Kontakt.html">Credit</a>
+         
+        
+        </div>
+        </div>
+      </header>
+
+      <div class="logo">
+        Catch It!
+      </div>
+      
+    <h1> Hur gjordes spelet? </h1>
+   
+    <p> Vi började med en idé och en skiss. Därefter påbörjade vi spelet i Unity och laddade ner olika figurer, som ballongerna och hinken. Sedan skapade vi poängräknaren och till sist reset-knappen. </p>
+
+</body>
+</html>
+
+

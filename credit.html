@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="SpelSite.css">
+</head>
+<script>
+    function toggleMenu() {
+      const menu = document.getElementById("dropdownMenu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  
+   
+    window.addEventListener("click", function (e) {
+      const menu = document.getElementById("dropdownMenu");
+      const icon = document.querySelector(".menu-icon");
+      if (!menu.contains(e.target) && !icon.contains(e.target)) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
+<body>
+    <header>
+        <div class="menu-container">
+          <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+      
+          <div class="dropdown-menu" id="dropdownMenu">
+           
+            <a href="Index.html">Hem</a> 
+            <a href="OmSpelet.html">Om spelet!</a> 
+            <a href="HurSpelarMan.html">Hur spelar man?</a> 
+            <a href="HurGjordesSpelet.html">Hur gjordes spelet?</a>
+            <a href="Kontakt.html">Credit</a>
+         
+        
+        </div>
+        </div>
+      </header>
+      
+      
+    <h1> Credit</h1>
+    <h2> Hur delades arbetet upp? </h2>
+    <p> Haya ansvarade för webbsidan och skrev den första koden till startsidan. Hon skrev också alla beskrivningar och namngav de olika delarna på hemsidan. Filip fokuserade på spelet och gjorde det mesta av arbetet där. Vi har samarbetat så mycket som möjligt, delat upp arbetsuppgifterna och hjälpt varandra med spelet när det behövts.</p>
+    <h2> Vart alla assets är från: </h2>
+    <a href="https://assetstore.unity.com/packages/3d/props/tools/low-poly-casual-bucket-287902S" target="_blank">Ballon assets:</a>
+
+    <a href="https://assetstore.unity.com/packages/3d/props/tools/low-poly-casual-bucket-287902S" target="_blank">Bucket assets:</a>
+
+</body>
+</html>
+
+

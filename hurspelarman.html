@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="SpelSite.css">
+</head>
+<script>
+    function toggleMenu() {
+      const menu = document.getElementById("dropdownMenu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  
+    window.addEventListener("click", function (e) {
+      const menu = document.getElementById("dropdownMenu");
+      const icon = document.querySelector(".menu-icon");
+      if (!menu.contains(e.target) && !icon.contains(e.target)) {
+        menu.style.display = "none";
+      }
+    });
+</script>
+<body>
+    <header>
+        <div class="menu-container">
+          <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+      
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a href="Index.html">Hem</a> 
+            <a href="OmSpelet.html">Om spelet!</a> 
+            <a href="HurSpelarMan.html">Hur spelar man?</a> 
+            <a href="HurGjordesSpelet.html">Hur gjordes spelet?</a>
+            <a href="Kontakt.html">Credit</a>
+          </div>
+        </div>
+    </header>
+
+    <div class="logo">
+      Catch It!
+    </div>
+    
+    <h1>Hur spelar man?</h1>
+    
+    <p>Man spelar spelet genom att använda vänster- och högerpiltangenterna för att flytta hinken fram och tillbaka och fånga ballongerna som faller från himlen.</p>
+
+    <h2>Styrning</h2>
+<div style="text-align: center;">
+  <table border="1" style="border-collapse: collapse; margin: auto;">
+    <tr>
+      <th>Tangent</th>
+      <th>Funktion</th>
+    </tr>
+    <tr>
+      <td>⬅️ Vänsterpil</td>
+      <td>Flytta hinken åt vänster</td>
+    </tr>
+    <tr>
+      <td>➡️ Högerpil</td>
+      <td>Flytta hinken åt höger</td>
+    </tr>
+  </table>
+</div>
+
+    </table>
+</body>
+</html>
